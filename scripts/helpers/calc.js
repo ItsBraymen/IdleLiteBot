@@ -46,7 +46,7 @@ const getAbilityModifier = async (player, ability) => {
   if (ability === 'idleboost') {
     return 1 + current * 0.1
   } else if (ability === 'rakeback') {
-    return current * 0.01 + 0.02
+    return Math.round(current * 1 + 2)/100
   } else if (ability === 'cheapergems') {
     return 4000 * 0.1 * current
   } else if (ability === 'gemlimit') {

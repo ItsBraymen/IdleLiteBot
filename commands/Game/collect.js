@@ -41,7 +41,7 @@ module.exports = {
 
     let rakeback = player.rakeback
 
-    if (!rakeback || rakeback === 0) {
+    if (!rakeback || rakeback == 0) {
       SimpleEmbed.log(message, '!collect', 'Rakeback Program', 'You have nothing to collect...', 'red')
     } else {
       // Add User to Cooldown List
